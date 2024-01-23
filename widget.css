@@ -1,0 +1,56 @@
+#mainWidget {
+    background: deepskyblue;
+    color: white;
+    min-width: 200px;
+    max-width: 1024px;
+    padding: 10px;
+}
+
+
+#mainWidget h1 {
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+form input {
+    width: 90%;
+    height: 50px;
+    border: none;
+}
+
+
+p {
+    width: 40%;
+    height: 52px;
+}
+
+.formButton {
+    width: 25%;
+    height: 52px;
+    background: orange;
+    color: white;
+    font-size: 20px;
+    border: none;
+}
+
+.inputWithIcon{
+    width: 27%;
+}
+.inputWithIcon button {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    right: 30px;
+    outline: none;
+    border: none;
+    background: url("calendar.svg") center;
+}
+
+
