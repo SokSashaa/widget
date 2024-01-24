@@ -25,7 +25,6 @@ form input {
     border: none;
 }
 
-
 p {
     width: 40%;
     height: 52px;
@@ -40,12 +39,13 @@ p {
     border: none;
 }
 
-.inputWithIcon{
+.inputWithIcon {
     width: 27%;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
+
 .inputWithIcon button {
     width: 15px;
     height: 15px;
@@ -56,4 +56,53 @@ p {
     background: url("calendar.svg") center;
 }
 
+@media (max-width: 900px) {
+    form {
+        flex-wrap: wrap;
+    }
+
+    p {
+        width: 100%;
+        height: 15px;
+    }
+
+    .formButton {
+        width: calc(100% / 3);
+    }
+
+    .inputWithIcon {
+        width: calc(100% / 3);
+    }
+
+    .inputWithIcon input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+
+    /*p {*/
+    /*    width: 100%;*/
+    /*    height: 15px;*/
+    /*}*/
+    p {
+        height: auto;
+    }
+
+    form {
+        justify-content: left;
+    }
+
+    .formButton {
+        width: calc(100% - 15px);
+    }
+
+    .inputWithIcon {
+        width: calc((100% - 15px) / 2);
+    }
+
+    .inputWithIcon input {
+        width: 100%;
+    }
+}
 
