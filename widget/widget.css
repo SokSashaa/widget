@@ -1,7 +1,7 @@
 #mainWidget {
     background: deepskyblue;
     color: white;
-    min-width: 200px;
+    min-width: 250px;
     max-width: 1024px;
     padding: 10px;
 }
@@ -67,11 +67,11 @@ p {
     }
 
     .formButton {
-        width: calc(100% / 3);
+        width: calc(100% / 3 - 15px);
     }
 
     .inputWithIcon {
-        width: calc(100% / 3);
+        width: calc(100% / 3 - 15px);
     }
 
     .inputWithIcon input {
@@ -81,12 +81,10 @@ p {
 
 @media (max-width: 700px) {
 
-    /*p {*/
-    /*    width: 100%;*/
-    /*    height: 15px;*/
-    /*}*/
     p {
         height: auto;
+        order: 1;
+        margin: 0;
     }
 
     form {
@@ -104,5 +102,8 @@ p {
     .inputWithIcon input {
         width: 100%;
     }
+
+
 }
+
 
