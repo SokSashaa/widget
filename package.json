@@ -1,17 +1,25 @@
 {
   "dependencies": {
-    "package.json": "^2.0.1"
+    "babel-loader": "^9.1.3",
+    "css-loader": "^6.10.0",
+    "html-webpack-plugin": "^5.6.0",
+    "package.json": "^2.0.1",
+    "style-loader": "^3.3.4",
+    "svg-inline-loader": "^0.8.2",
+    "webpack": "^5.90.1"
   },
   "name": "widget",
   "version": "1.0.0",
   "main": "exportWidget.js",
-  "type": "module",
-  "devDependencies": {},
+  "type": "commonjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "webpack-cli": "^5.1.4"
+  }
 }

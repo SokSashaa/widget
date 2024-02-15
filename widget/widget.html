@@ -2,13 +2,15 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link type="text/css" rel="stylesheet" href="widget.css">
+    <link type="text/css" rel="stylesheet" href="widget.css" >
+    <link type="text/css" rel="stylesheet" href="M700.css">
+    <link type="text/css" rel="stylesheet" href="M900.css">
     <link href="datepicker.material.css" rel="stylesheet">
 </head>
 <body>
 <div id="mainWidget">
     <h1>Where does it come from? Why do we use it?</h1>
-    <form>
+    <form class="formWidget">
         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking
             at its layout</p>
         <div class="inputWithIcon"><input type="text" placeholder="Depart date" id="forDepDate">
@@ -18,11 +20,9 @@
             <button type="button" id="retDate"></button>
         </div>
         <button class="formButton">Search</button>
-
     </form>
 
 </div>
 <script src="datepicker.js"></script>
-<script src="widget.js"></script>
 </body>
 </html>

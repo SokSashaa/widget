@@ -6,31 +6,31 @@
     padding: 10px;
 }
 
-
 #mainWidget h1 {
     margin: 0;
     padding: 0;
 }
 
-form {
+.formWidget {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 15px;
 }
 
-form input {
+
+.formWidget input {
     width: 90%;
     height: 50px;
     border: none;
 }
 
-p {
+.formWidget p {
     width: 40%;
     height: 52px;
 }
 
-.formButton {
+.formWidget .formButton {
     width: 25%;
     height: 52px;
     background: orange;
@@ -39,14 +39,14 @@ p {
     border: none;
 }
 
-.inputWithIcon {
+.formWidget .inputWithIcon {
     width: 27%;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.inputWithIcon button {
+.formWidget .inputWithIcon button {
     width: 15px;
     height: 15px;
     position: relative;
@@ -56,54 +56,121 @@ p {
     background: url("calendar.svg") center;
 }
 
-@media (max-width: 900px) {
-    form {
-        flex-wrap: wrap;
-    }
 
-    p {
-        width: 100%;
-        height: 15px;
-    }
-
-    .formButton {
-        width: calc(100% / 3 - 15px);
-    }
-
-    .inputWithIcon {
-        width: calc(100% / 3 - 15px);
-    }
-
-    .inputWithIcon input {
-        width: 100%;
-    }
+.M900 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
-@media (max-width: 700px) {
 
-    p {
-        height: auto;
-        order: 1;
-        margin: 0;
-    }
-
-    form {
-        justify-content: left;
-    }
-
-    .formButton {
-        width: calc(100% - 15px);
-    }
-
-    .inputWithIcon {
-        width: calc((100% - 15px) / 2);
-    }
-
-    .inputWithIcon input {
-        width: 100%;
-    }
-
-
+.M900 input {
+    width: 90%;
+    height: 50px;
+    border: none;
 }
+
+.M900 p {
+    width: 100%;
+    height: 15px;
+}
+
+.M900 .formButton {
+    width: calc(100% / 3 - 15px);
+    height: 52px;
+    background: orange;
+    color: white;
+    font-size: 20px;
+    border: none;
+}
+
+.M900 .inputWithIcon {
+    width: calc(100% / 3 - 15px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.M900 .inputWithIcon input {
+    width: 100%;
+}
+
+.M900 .inputWithIcon button {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    right: 30px;
+    outline: none;
+    border: none;
+    background: url("calendar.svg") center;
+}
+
+
+.M700 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+
+.M700 input {
+    width: 90%;
+    height: 50px;
+    border: none;
+}
+
+.M700 p {
+    width: 100%;
+    height: auto;
+    order: 1;
+    margin: 0;
+}
+
+.M700 .formButton {
+    width: calc(100% - 15px);
+    height: 52px;
+    background: orange;
+    color: white;
+    font-size: 20px;
+    border: none;
+}
+
+.M700 .inputWithIcon {
+    width: calc((100% - 15px) / 2);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.M700 .inputWithIcon button {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    right: 30px;
+    outline: none;
+    border: none;
+    background: url("calendar.svg") center;
+}
+
+.M700 .inputWithIcon input {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
